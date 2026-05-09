@@ -1,4 +1,4 @@
-public class practice3 {
+public class practice3_1 {
 
     public static void main(String[] args) {
         byte b = 10;
