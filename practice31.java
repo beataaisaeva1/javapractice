@@ -21,9 +21,7 @@ public class practice31 {
     // метод может выбросить собственное исключение
     static void checkAge(int age) throws MyFirstException {
         if (age < 18) {
-            throw new MyFirstException(
-                    "Возраст меньше 18"
-            );
+            throw new MyFirstException("Возраст меньше 18");
         }
         System.out.println("Доступ разрешён");
     }
@@ -32,9 +30,7 @@ public class practice31 {
             checkAge(15);
         } catch (MyFirstException e) {
 
-            System.out.println(
-                    "Обработано исключение: "
-                    + e.getMessage()
+            System.out.println("Обработано исключение: " + e.getMessage()
             );
         }
     }
